@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>dbapp</title>
+	</head>
+	<body>
+		<h3>The {{department_name}} students are: </h3>
+		<ul>
+			{% for st in students %}
+			<li>Name: {{st.student_name}} <br />USN: {{st.usn}}<br />Project: {{st.project_completed}}</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

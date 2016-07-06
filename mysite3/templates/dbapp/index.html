@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>student database</title>
+	</head>
+	<body>
+		<h3>The department of jain University : </h3>
+		{% for dp in departmentlists %}
+			<li><a href="/dbapp/department/{{dp.dept_name}}">{{dp.dept_name}}</a></li> <br />
+		{% endfor %}
+	</body>
+</html>
